@@ -18,12 +18,14 @@ this is a study project for webpack !
 - npm install --save lodash
 	- https://unpkg.com/lodash
 
-	const path = require('path')
+<code>
+const path = require('path')
 
-	module.exports = {
-		entry: './src/index.js',
-		output: {
-			filename: 'bundle.js',
-			path: path.resolve(__dirname, 'dist')
-		}
-	};
+module.exports = {
+	entry: './src/index.js',
+	output: {
+		filename: 'bundle.js',
+		path: path.resolve(__dirname, 'dist')
+	}
+};
+</code>
