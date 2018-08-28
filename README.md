@@ -18,7 +18,7 @@ this is a study project for webpack !
 - npm install --save lodash
 	- https://unpkg.com/lodash
 
-<code>
+<code><pre>
 const path = require('path')
 
 module.exports = {
@@ -28,4 +28,4 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist')
 	}
 };
-</code>
+</pre></code>
