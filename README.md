@@ -37,3 +37,7 @@ module.exports = {
 - url-loader
 - csv-loader
 - xml-loader
+
+## Output Management
+- npm install --save-dev html-webpack-plugin
+- npm install --save-dev clean-webpack-plugin
