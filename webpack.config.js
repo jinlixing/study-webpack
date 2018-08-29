@@ -1,33 +1,19 @@
 const path = require('path')
+const HtmlWebpckPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	mode: 'development',
-	entry: './src/index.js',
+	entry: {
+		app: './src/index.js',
+		print: './src/print.js'
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js'
+		filename: '[name].bundle.js'
 	},
-	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				use: [
-					'style-loader',
-					'css-loader'
-				]
-			},
-			{
-				test: /\.(png|jpg|jpeg|gif|svg)$/,
-				use: [
-					'file-loader'
-				]
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				use: [
-					'file-loader'
-				]
-			}
-		]
-	}
+	plugins: [
+		new HtmlWebpckPlugin({
+			title: 'Output Management'
+		})
+	]
 }

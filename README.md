@@ -35,3 +35,5 @@ module.exports = {
 - npm install --save-dev file-loader
 - image-webpack-loader
 - url-loader
+- csv-loader
+- xml-loader
