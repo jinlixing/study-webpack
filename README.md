@@ -3,7 +3,7 @@ this is a study project for webpack !
 
 # The kewords of webpack
 
-## install
+## Install
 - npm install --save webpack
 - npm install --save webpack@<version>
 - npm install --save-dev webpack-cli
@@ -12,7 +12,7 @@ this is a study project for webpack !
     - npm run build
 - 不建议全局安装
 
-## start
+## Start
 - npm init -y
 - npm install webpack webpack-cli --save-dev
 - npm install --save lodash
@@ -29,3 +29,9 @@ module.exports = {
     }
 };
 ```
+
+## Assets Management
+- npm install --save-dev style-loader css-loader
+- npm install --save-dev file-loader
+- image-webpack-loader
+- url-loader
