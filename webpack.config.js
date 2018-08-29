@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpckPlugin = require('html-webpack-plugin')
+const CleanWebpckPlugin = require('clean-webpack-plugin')
 
 module.exports = {
 	mode: 'development',
@@ -12,6 +13,7 @@ module.exports = {
 		filename: '[name].bundle.js'
 	},
 	plugins: [
+		new CleanWebpckPlugin(['dist']),
 		new HtmlWebpckPlugin({
 			title: 'Output Management'
 		})
